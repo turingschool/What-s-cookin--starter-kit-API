@@ -8,11 +8,10 @@ const recipes = require('./data/recipes');
 
 
 app.locals = {
-  title: 'FitLit-starter-kit API',
+  title: "What's cookin-starter-kit API",
   users,
   ingredients,
   recipes,
-  
 }
 
 app.use(cors());
@@ -29,8 +28,6 @@ app.get('/api/v1/ingredients', (req, res) => {
 app.get('/api/v1/recipes', (req, res) => {
   res.status(200).json(app.locals.recipes);
 });
-
-
 
 
 
