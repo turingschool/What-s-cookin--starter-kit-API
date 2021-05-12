@@ -18,6 +18,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/api/v1/users', (req, res) => {
+  console.log(app.locals.users,"<>>>users")
   res.status(200).json(app.locals.users);
 });
 
